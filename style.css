@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Heebo, sans-serif;
+}
+
+body, nav, header, main, footer {
+    background-color: #ececec;
+}
+
+/*----------------------- NAV --------------------------*/
+nav #nav_large {
+    background-color: #2b7f4a;
+    border-radius: 0 0 5rem 5rem;
+}
+
+nav #nav_large p a {
+    text-decoration: none;
+    color: #ececec;
+    font-weight: 200;
+}
+nav #nav_large p a:hover{
+    font-weight: 400;
+}
+#nav_small #hamburger_icon{
+    width: 10%;
+}
+#nav_small #close_icon{
+    display: none;
+}
+#nav_small #close_icon img{
+    width: 42%;
+    margin-left: -1rem;
+}
+
+#nav_small .dropdown {
+    position: relative;
+    display: inline-block;
+}
+#nav_small .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    left: -0.5rem;
+    background-color: #ececec;
+    border-radius: 0 0 1rem 1rem;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+#nav_small .dropdown-content h2{
+    font-size: 20pt;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+#nav_small .dropdown-content p{
+    margin: 0;
+}
+
+#nav_small .dropdown-content a {
+    color: #2b7f4a;
+    text-decoration: none;
+    display: block;
+    font-family: Heebo, sans-serif;
+}
+#nav_small .dropdown-content a p:hover {
+    font-weight: 800;
+}
+#nav_small .dropdown-content a h2:hover {
+    font-weight: 600;
+}
+#nav_small .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#nav_small{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    #nav_large {
+        display: none;
+    }
+
+    #nav_small {
+        display: block;
+        margin-left: 1rem;
+        padding-top: 1.5rem;
+    }
+}
+/*----------------------- EINDE NAV --------------------------*/
+/*----------------------- HEADER --------------------------*/
+
+#chayenne {
+    font-family: "Kanit Black", sans-serif;
+    font-size: 100pt;
+    color: #2b7f4a;
+    margin: auto;
+}
+#leys{
+    font-family: "Kanit Black", sans-serif;
+    font-size: 100pt;
+    -webkit-text-stroke: 4px #2b7f4a;
+    -webkit-text-fill-color: #ececec;
+}
+
+#header_titel{
+    height: 43rem;
+}
+@media screen and (max-width: 1100px){
+#chayenne, #leys{
+    font-size: 75pt;
+}
+}
+@media screen and (max-width: 800px){
+    #chayenne, #leys{
+        font-size: 60pt;
+    }
+}
+@media screen and (max-width: 650px){
+    #chayenne, #leys{
+        font-size: 50pt;
+    }
+}
+@media screen and (max-width: 576px){
+    #chayenne, #leys{
+        font-size: 50pt;
+    }
+    #header_titel{
+        height: 20rem;
+    }
+}
+/*----------------------- EINDE HEADER --------------------------*/
+
+/*----------------------- MAIN --------------------------*/
+main h1 {
+    font-size: 50pt;
+    color: #2b7f4a;
+}
+
+main h2 {
+    font-weight: 200;
+}
+/*----------------------- OVER MIJ --------------------------*/
+#over_mij img {
+    width: 100%;
+}
+
+#over_mij #kernwaarden p {
+    color: #ececec;
+    background-color: #2b7f4a;
+    border-radius: 50%;
+    padding: 10% 0;
+}
+
+#mijn_skills{
+    margin-top: 5rem;
+}
+@media screen and (max-width: 768px) {
+#over_mij #profielfoto{
+    display: none;
+}
+}
+
+/*----------------------- MIJN SKILLS --------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.skill_psd, .skill_ai, .skill_xd{
+    width: 100%;
+    padding: 50px 0;
+    border-radius: 8px;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.skill_psd .psd_circular-progress{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background: conic-gradient(#01bef5 3.6deg, #2b7f4a 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill_psd .psd_circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: #ececec;
+}
+
+/*----------------------- WPL 1 --------------------------*/
+
+/*----------------------- WPL 2 --------------------------*/
+
+
+/*----------------------- EINDE MAIN --------------------------*/
+/*----------------------- FOOTER --------------------------*/
+
+
+/*----------------------- EINDE FOOTER --------------------------*/
