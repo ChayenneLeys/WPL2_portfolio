@@ -235,6 +235,13 @@ main h2 {
     background-size: 85%;
     background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px){
+    .skill_psd .psd_circular-progress, .skill_ai .ai_circular-progress, .skill_xd .xd_circular-progress{
+        height: 6rem;
+        width: 6rem;
+        margin-top: -2rem;
+    }
+}
 /*----------------------- WPL 1 --------------------------*/
 
 /*----------------------- WPL 2 --------------------------*/
@@ -242,6 +249,10 @@ main h2 {
 
 /*----------------------- EINDE MAIN --------------------------*/
 /*----------------------- FOOTER --------------------------*/
-
+.footer{
+    background-color: #2b7f4a;
+    border-radius: 5rem 5rem 0 0;
+    height: 10rem;
+}
 
 /*----------------------- EINDE FOOTER --------------------------*/
