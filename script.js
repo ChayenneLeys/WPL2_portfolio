@@ -34,7 +34,7 @@ progressValue.style.display= "none";
 
 let progressStartValue = 0,
     progressEndValue = 75,
-    speed = 10;
+    speed = 5;
 
 let progress = setInterval(() => {
     progressStartValue++;
@@ -49,19 +49,38 @@ let progress = setInterval(() => {
 
 let circularProgressAI = document.querySelectorAll(".ai_circular-progress")[0],
     progressValueAI = document.querySelectorAll(".ai_progress-value")[0];
-progressValue.style.display= "none";
+progressValueAI.style.display= "none";
 
 let progressStartValueAI = 0,
-    progressEndValueAI = 60,
-    speedAI = 10;
+    progressEndValueAI = 65,
+    speedAI = 5;
 
 let progressAI = setInterval(() => {
     progressStartValueAI++;
 
     progressValueAI.textContent = `${progressStartValueAI}%`
-    circularProgressAI.style.background = `conic-gradient(#2b7f4a ${progressStartValue * 3.6}deg, #ececec 0deg)`
+    circularProgressAI.style.background = `conic-gradient(#2b7f4a ${progressStartValueAI * 3.6}deg, #ececec 0deg)`
 
     if(progressStartValueAI === progressEndValueAI){
         clearInterval(progressAI);
     }
 }, speedAI);
+
+let circularProgressXD = document.querySelectorAll(".xd_circular-progress")[0],
+    progressValueXD = document.querySelectorAll(".xd_progress-value")[0];
+progressValueXD.style.display= "none";
+
+let progressStartValueXD = 0,
+    progressEndValueXD = 55,
+    speedXD = 5;
+
+let progressXD = setInterval(() => {
+    progressStartValueXD++;
+
+    progressValueXD.textContent = `${progressStartValueXD}%`
+    circularProgressXD.style.background = `conic-gradient(#2b7f4a ${progressStartValueXD * 3.6}deg, #ececec 0deg)`
+
+    if(progressStartValueXD === progressEndValueXD){
+        clearInterval(progressXD);
+    }
+}, speedXD);

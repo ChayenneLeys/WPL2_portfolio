@@ -214,7 +214,27 @@ main h2 {
     background-size: 85%;
     background-repeat: no-repeat;
 }
-
+.skill_xd .xd_circular-progress{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill_xd .xd_circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: #ececec;
+    background-image: url("assets/xd.png");
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+}
 /*----------------------- WPL 1 --------------------------*/
 
 /*----------------------- WPL 2 --------------------------*/
