@@ -28,8 +28,8 @@ function closeDropdown(){
 }
 
 //-------------------------- MIJN SKILLS ------------------------------
-let circularProgress = document.querySelector(".psd_circular-progress"),
-    progressValue = document.querySelector(".psd_progress-value");
+let circularProgress = document.querySelectorAll(".psd_circular-progress")[0],
+    progressValue = document.querySelectorAll(".psd_progress-value")[0];
 progressValue.style.display= "none";
 
 let progressStartValue = 0,
@@ -40,10 +40,28 @@ let progress = setInterval(() => {
     progressStartValue++;
 
     progressValue.textContent = `${progressStartValue}%`
-    circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+    circularProgress.style.background = `conic-gradient(#2b7f4a ${progressStartValue * 3.6}deg, #ececec 0deg)`
 
     if(progressStartValue === progressEndValue){
         clearInterval(progress);
     }
 }, speed);
 
+let circularProgressAI = document.querySelectorAll(".ai_circular-progress")[0],
+    progressValueAI = document.querySelectorAll(".ai_progress-value")[0];
+progressValue.style.display= "none";
+
+let progressStartValueAI = 0,
+    progressEndValueAI = 60,
+    speedAI = 10;
+
+let progressAI = setInterval(() => {
+    progressStartValueAI++;
+
+    progressValueAI.textContent = `${progressStartValueAI}%`
+    circularProgressAI.style.background = `conic-gradient(#2b7f4a ${progressStartValue * 3.6}deg, #ececec 0deg)`
+
+    if(progressStartValueAI === progressEndValueAI){
+        clearInterval(progressAI);
+    }
+}, speedAI);

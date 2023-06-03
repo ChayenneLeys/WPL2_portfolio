@@ -162,7 +162,7 @@ main h2 {
 }
 
 /*----------------------- MIJN SKILLS --------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 .skill_psd, .skill_ai, .skill_xd{
     width: 100%;
@@ -174,10 +174,9 @@ main h2 {
 }
 .skill_psd .psd_circular-progress{
     position: relative;
-    height: 90%;
-    width: 90%;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
-    background: conic-gradient(#01bef5 3.6deg, #2b7f4a 0deg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,6 +188,31 @@ main h2 {
     width: 90%;
     border-radius: 50%;
     background-color: #ececec;
+    background-image: url("assets/psd.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.skill_ai .ai_circular-progress{
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill_ai .ai_circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: #ececec;
+    background-image: url("assets/ai.png");
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
 }
 
 /*----------------------- WPL 1 --------------------------*/
