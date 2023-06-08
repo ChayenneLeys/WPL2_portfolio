@@ -20,16 +20,20 @@ nav #nav_large p a {
     color: #ececec;
     font-weight: 200;
 }
-nav #nav_large p a:hover{
+
+nav #nav_large p a:hover {
     font-weight: 400;
 }
-#nav_small #hamburger_icon{
+
+#nav_small #hamburger_icon {
     width: 10%;
 }
-#nav_small #close_icon{
+
+#nav_small #close_icon {
     display: none;
 }
-#nav_small #close_icon img{
+
+#nav_small #close_icon img {
     width: 42%;
     margin-left: -1rem;
 }
@@ -38,6 +42,7 @@ nav #nav_large p a:hover{
     position: relative;
     display: inline-block;
 }
+
 #nav_small .dropdown-content {
     display: none;
     position: absolute;
@@ -48,12 +53,14 @@ nav #nav_large p a:hover{
     padding-top: 1.5rem;
     width: 100%;
 }
-#nav_small .dropdown-content h2{
+
+#nav_small .dropdown-content h2 {
     font-size: 20pt;
     font-weight: 400;
     margin: 0.5rem 0;
 }
-#nav_small .dropdown-content p{
+
+#nav_small .dropdown-content p {
     margin: 0;
 }
 
@@ -63,19 +70,23 @@ nav #nav_large p a:hover{
     display: block;
     font-family: Heebo, sans-serif;
 }
+
 #nav_small .dropdown-content a p:hover {
     font-weight: 800;
 }
+
 #nav_small .dropdown-content a h2:hover {
     font-weight: 600;
 }
+
 #nav_small .dropdown:hover .dropdown-content {
     display: block;
 }
 
-#nav_small{
+#nav_small {
     display: none;
 }
+
 @media screen and (max-width: 576px) {
     #nav_large {
         display: none;
@@ -87,6 +98,7 @@ nav #nav_large p a:hover{
         padding-top: 1.5rem;
     }
 }
+
 /*----------------------- EINDE NAV --------------------------*/
 /*----------------------- HEADER --------------------------*/
 
@@ -96,39 +108,46 @@ nav #nav_large p a:hover{
     color: #2b7f4a;
     margin: auto;
 }
-#leys{
+
+#leys {
     font-family: "Kanit Black", sans-serif;
     font-size: 100pt;
     -webkit-text-stroke: 4px #2b7f4a;
     -webkit-text-fill-color: #ececec;
 }
 
-#header_titel{
+#header_titel {
     height: 43rem;
 }
-@media screen and (max-width: 1100px){
-#chayenne, #leys{
-    font-size: 75pt;
+
+@media screen and (max-width: 1100px) {
+    #chayenne, #leys {
+        font-size: 75pt;
+    }
 }
-}
-@media screen and (max-width: 800px){
-    #chayenne, #leys{
+
+@media screen and (max-width: 800px) {
+    #chayenne, #leys {
         font-size: 60pt;
     }
 }
-@media screen and (max-width: 650px){
-    #chayenne, #leys{
+
+@media screen and (max-width: 650px) {
+    #chayenne, #leys {
         font-size: 50pt;
     }
 }
-@media screen and (max-width: 576px){
-    #chayenne, #leys{
+
+@media screen and (max-width: 576px) {
+    #chayenne, #leys {
         font-size: 50pt;
     }
-    #header_titel{
+
+    #header_titel {
         height: 20rem;
     }
 }
+
 /*----------------------- EINDE HEADER --------------------------*/
 
 /*----------------------- MAIN --------------------------*/
@@ -140,6 +159,7 @@ main h1 {
 main h2 {
     font-weight: 200;
 }
+
 /*----------------------- OVER MIJ --------------------------*/
 #over_mij img {
     width: 100%;
@@ -152,19 +172,19 @@ main h2 {
     padding: 10% 0;
 }
 
-#mijn_skills{
+#mijn_skills {
     margin-top: 5rem;
 }
+
 @media screen and (max-width: 768px) {
-#over_mij #profielfoto{
-    display: none;
-}
+    #over_mij #profielfoto {
+        display: none;
+    }
 }
 
 /*----------------------- MIJN SKILLS --------------------------*/
-
-
-.skill_psd, .skill_ai, .skill_xd{
+/*----------------------- HARDSKILLS --------------------------*/
+.skill_psd, .skill_ai, .skill_xd {
     width: 100%;
     padding: 50px 0;
     border-radius: 8px;
@@ -172,7 +192,8 @@ main h2 {
     flex-direction: column;
     align-items: center;
 }
-.skill_psd .psd_circular-progress{
+
+.skill_psd .psd_circular-progress {
     position: relative;
     height: 10rem;
     width: 10rem;
@@ -181,7 +202,8 @@ main h2 {
     align-items: center;
     justify-content: center;
 }
-.skill_psd .psd_circular-progress::before{
+
+.skill_psd .psd_circular-progress::before {
     content: "";
     position: absolute;
     height: 90%;
@@ -193,7 +215,8 @@ main h2 {
     background-size: 70%;
     background-repeat: no-repeat;
 }
-.skill_ai .ai_circular-progress{
+
+.skill_ai .ai_circular-progress {
     position: relative;
     height: 10rem;
     width: 10rem;
@@ -202,7 +225,8 @@ main h2 {
     align-items: center;
     justify-content: center;
 }
-.skill_ai .ai_circular-progress::before{
+
+.skill_ai .ai_circular-progress::before {
     content: "";
     position: absolute;
     height: 90%;
@@ -214,7 +238,8 @@ main h2 {
     background-size: 85%;
     background-repeat: no-repeat;
 }
-.skill_xd .xd_circular-progress{
+
+.skill_xd .xd_circular-progress {
     position: relative;
     height: 10rem;
     width: 10rem;
@@ -223,7 +248,8 @@ main h2 {
     align-items: center;
     justify-content: center;
 }
-.skill_xd .xd_circular-progress::before{
+
+.skill_xd .xd_circular-progress::before {
     content: "";
     position: absolute;
     height: 90%;
@@ -235,11 +261,37 @@ main h2 {
     background-size: 85%;
     background-repeat: no-repeat;
 }
-@media screen and (max-width: 768px){
-    .skill_psd .psd_circular-progress, .skill_ai .ai_circular-progress, .skill_xd .xd_circular-progress{
+
+@media screen and (max-width: 768px) {
+    .skill_psd .psd_circular-progress, .skill_ai .ai_circular-progress, .skill_xd .xd_circular-progress {
         height: 6rem;
         width: 6rem;
         margin-top: -2rem;
+    }
+}
+
+/*----------------------- SOFTSKILLS --------------------------*/
+#mijn-skills-softskills-bollen i {
+    font-size: 40pt;
+    color: #ececec;
+    background-color: #2b7f4a;
+    border-radius: 50%;
+    padding: 20%;
+}
+@media screen and (max-width: 768px) {
+    #mijn-skills-softskills-bollen i{
+        font-size: 18pt;
+        padding: 40%;
+    }
+    #mijn-skills-softskills-bollen p{
+        display: none;
+    }
+    #mijn-skills-softskills-bollen .col-2:hover p{
+        display: block;
+        position: absolute;
+    }
+    #mijn-skills-softskills-bollen{
+        margin: 1rem 0 2rem 0;
     }
 }
 /*----------------------- WPL 1 --------------------------*/
@@ -249,10 +301,16 @@ main h2 {
 
 /*----------------------- EINDE MAIN --------------------------*/
 /*----------------------- FOOTER --------------------------*/
-.footer{
+.footer {
     background-color: #2b7f4a;
     border-radius: 5rem 5rem 0 0;
     height: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        border-radius: 2rem 2rem 0 0;
+    }
 }
 
 /*----------------------- EINDE FOOTER --------------------------*/
