@@ -295,11 +295,37 @@ main h2 {
     }
 }
 /*----------------------- WPL 1 --------------------------*/
+#mijn-schoolprojecten{
+    margin-top: 5rem;
+}
+.schoolprojecten-bollen a{
+    display: block;
+    width: 10rem;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ececec;
+    text-decoration: none;
+    background-image: url("assets/bol.png");
+    background-size: 10rem 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /*----------------------- WPL 2 --------------------------*/
 
 
 /*----------------------- EINDE MAIN --------------------------*/
+/* Omhoogknop */
+.omhoogknop{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+.omhoogknop a i{
+    font-size: 40pt;
+    color: #2b7f4a;
+}
 /*----------------------- FOOTER --------------------------*/
 .footer {
     background-color: #2b7f4a;
