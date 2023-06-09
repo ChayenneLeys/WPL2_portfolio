@@ -84,3 +84,22 @@ let progressXD = setInterval(() => {
         clearInterval(progressXD);
     }
 }, speedXD);
+
+//-------------------------- WPL 1 ------------------------------
+let schoolBollen= document.getElementsByClassName("schoolprojecten-bollen")[0];
+let schoolItem= document.getElementsByClassName("schoolprojecten-item")[0];
+
+let arrowLeft= document.getElementsByClassName("arrow-icon")[0];
+let arrowRight= document.getElementsByClassName("arrow-icon")[1];
+
+schoolBollen.forEach((item, i) =>{
+    let containerDimensie = item.getBoundingClientRect();
+    let containerWidth = containerDimensie.width/2;
+
+    arrowRight[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+    arrowLeft[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})

@@ -310,6 +310,28 @@ main h2 {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* CAROUSEL*/
+.arrow-icon i{
+    color: #2b7f4a;
+    font-size: 50pt;
+    opacity: 0.5;
+}
+.arrow-icon i:hover{
+    opacity: 1;
+}
+.schoolprojecten-bollen {
+    flex-wrap: nowrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+    border: 1px solid black;
+}
+.schoolprojecten-item {
+    overflow-x: auto;
+    border: 1px solid red;
+}
+.schoolprojecten-bollen::-webkit-scrollbar {
+    display: none;
+}
 
 /*----------------------- WPL 2 --------------------------*/
 
