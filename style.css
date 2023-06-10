@@ -159,6 +159,14 @@ main h1 {
 main h2 {
     font-weight: 200;
 }
+@media screen and (max-width: 768px) {
+   main h1{
+        font-size: 30pt;
+    }
+    main h2{
+        font-size: 18pt;
+    }
+}
 
 /*----------------------- OVER MIJ --------------------------*/
 #over_mij img {
@@ -183,9 +191,9 @@ main h2 {
 }
 
 /*----------------------- MIJN SKILLS --------------------------*/
+
 /*----------------------- HARDSKILLS --------------------------*/
 .skill_psd, .skill_ai, .skill_xd {
-    width: 100%;
     padding: 50px 0;
     border-radius: 8px;
     row-gap: 30px;
@@ -295,22 +303,33 @@ main h2 {
     }
 }
 /*----------------------- WPL 1 --------------------------*/
-#mijn-schoolprojecten{
-    margin-top: 5rem;
+#wpl_1{
+    margin-top: 10rem;
 }
-.schoolprojecten-bollen a{
-    display: block;
-    width: 10rem;
-    text-align: center;
-    padding: 4rem 0;
-    color: #ececec;
+#wpl_1 .schoolprojecten-bollen a{
     text-decoration: none;
+    color: #ececec;
+}
+#wpl_1 .schoolprojecten-item{
     background-image: url("assets/bol.png");
-    background-size: 10rem 10rem;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 90%;
 }
-/* CAROUSEL*/
+
+/*!* CAROUSEL*!*/
+#wpl_1 .schoolprojecten-bollen {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+#wpl_1 .schoolprojecten-item {
+    overflow-x: auto;
+}
+.schoolprojecten-bollen::-webkit-scrollbar {
+    display: none;
+}
+
 .arrow-icon i{
     color: #2b7f4a;
     font-size: 50pt;
@@ -319,22 +338,22 @@ main h2 {
 .arrow-icon i:hover{
     opacity: 1;
 }
-.schoolprojecten-bollen {
-    flex-wrap: nowrap;
-    overflow: auto;
-    scroll-behavior: smooth;
-    border: 1px solid black;
-}
-.schoolprojecten-item {
-    overflow-x: auto;
-    border: 1px solid red;
-}
-.schoolprojecten-bollen::-webkit-scrollbar {
-    display: none;
-}
-
 /*----------------------- WPL 2 --------------------------*/
+#wpl_2{
+    margin-top: 5rem;
+}
+.schoolprojecten2-bollen a{
+    text-decoration: none;
+    color: #ececec;
+}
+.schoolprojecten2-item{
+    background-image: url("assets/bol.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
 
+    padding: 5rem 0 5rem 0;
+}
 
 /*----------------------- EINDE MAIN --------------------------*/
 /* Omhoogknop */
@@ -348,8 +367,14 @@ main h2 {
     font-size: 40pt;
     color: #2b7f4a;
 }
+@media screen and (max-width: 768px) {
+    .omhoogknop a i{
+        font-size: 18pt;
+    }
+}
 /*----------------------- FOOTER --------------------------*/
 .footer {
+    margin-top: 10rem;
     background-color: #2b7f4a;
     border-radius: 5rem 5rem 0 0;
     height: 10rem;

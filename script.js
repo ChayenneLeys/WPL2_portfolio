@@ -86,20 +86,44 @@ let progressXD = setInterval(() => {
 }, speedXD);
 
 //-------------------------- WPL 1 ------------------------------
-let schoolBollen= document.getElementsByClassName("schoolprojecten-bollen")[0];
-let schoolItem= document.getElementsByClassName("schoolprojecten-item")[0];
-
+let schoolBollen= document.querySelectorAll(".schoolprojecten-bollen");
 let arrowLeft= document.getElementsByClassName("arrow-icon")[0];
 let arrowRight= document.getElementsByClassName("arrow-icon")[1];
 
-schoolBollen.forEach((item, i) =>{
-    let containerDimensie = item.getBoundingClientRect();
-    let containerWidth = containerDimensie.width/2;
+function getWindowWidth() {
+    if (window.innerWidth!=null) {
+        return window.innerWidth;
+    } else {
+        return document.body.clientWidth;
+    }
+}
+if (getWindowWidth() <= 768) {
+    schoolBollen.forEach((item, i) => {
+        let containerDimensie = item.getBoundingClientRect();
+        let containerWidth = containerDimensie.width / 2;
 
-    arrowRight[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
+        arrowRight.addEventListener('click', () => {
+            item.scrollLeft += containerWidth;
+        })
+        arrowLeft.addEventListener('click', () => {
+            item.scrollLeft -= containerWidth;
+        })
     })
-    arrowLeft[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
+}
+else {
+    schoolBollen.forEach((item, i) => {
+        let containerDimensie = item.getBoundingClientRect();
+        let containerWidth = containerDimensie.width / 6;
+
+        arrowRight.addEventListener('click', () => {
+            item.scrollLeft += containerWidth;
+        })
+        arrowLeft.addEventListener('click', () => {
+            item.scrollLeft -= containerWidth;
+        })
     })
-})
+}
+
+//-------------------------- WPL 2 ------------------------------
+let arrow2Left= document.getElementsByClassName("arrow-icon")[2];
+let arrow2Right= document.getElementsByClassName("arrow-icon")[3];
