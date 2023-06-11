@@ -5,7 +5,7 @@
     font-family: Heebo, sans-serif;
 }
 
-body, nav, header, main, footer {
+body, nav, header, main, footer, .body {
     background-color: #ececec;
 }
 
@@ -373,6 +373,16 @@ main h2 {
     background-size: 90%;
     padding: 5rem 0 5rem 0;
 }
+@media screen and (max-width: 768px){
+    .schoolprojecten2-item {
+        background-size: 50%;
+    }
+}
+@media screen and (max-width: 576px){
+    .schoolprojecten2-item {
+        background-size: 80%;
+    }
+}
 
 /*----------------------- EINDE MAIN --------------------------*/
 /* Omhoogknop */
@@ -625,6 +635,15 @@ main h2 {
     #main-photoshop {
         margin-top: 0;
     }
+    #photoshop-chiro-emblemen-tekst p,
+    #photoshop-chiro-extra-geld-tekst p,
+    #photoshop-chiro-extra-posters-tekst p,
+    #photoshop-stage-tekst p,
+    #photoshop-mitro-tekst p,
+    #photoshop-zellan-tekst p {
+        font-size: 12pt;
+        margin: 0.5rem 0;
+    }
 
     #chirorok {
         width: 40%;
@@ -793,6 +812,7 @@ main h2 {
 #illustrator-zellan {
     display: flex;
     justify-content: space-between;
+    margin-bottom: -10rem;
 }
 
 #illustrator-zellan-tekst {
@@ -823,7 +843,7 @@ main h2 {
     }
 
     #illustrator-aandenken2021-tekst {
-        font-size: 16pt;
+        font-size: 12pt;
         margin: 0;
     }
 
@@ -837,13 +857,13 @@ main h2 {
     }
 
     #illustrator-denemarken-tekst {
-        font-size: 16pt;
+        font-size: 12pt;
         margin: 5% 0 0 10%;
     }
 
     #illustrator-zellan-tekst {
-        font-size: 16pt;
-        margin: 10% -5% 0 5%;
+        font-size: 12pt;
+        margin: 10% 0 0 5%;
     }
 
     #illustrator-zellan img {
@@ -1008,9 +1028,13 @@ main h2 {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+#mijn-look h3{
+    font-weight: 300;
+    width: 100%;
+}
 #mijn-look section {
     width: 24.5rem;
+    margin: auto;
 }
 
 #mijn-look img {
@@ -1059,6 +1083,7 @@ main h2 {
 
 #mijn-stijl {
     margin-top: 10rem;
+    margin-left: 10rem;
 }
 
 #mijn-stijl-voorbeeld-1 {
@@ -1321,31 +1346,45 @@ main h2 {
     }
 }
 /*----------------------- WPL 1 feedback en reflecteren --------------------------*/
-#feedback-reflecteren {
-    width: 60rem;
-}
+/*#feedback-reflecteren {*/
+/*    width: 60rem;*/
+/*}*/
 
-#feedback-reflecteren section h3 {
-    margin: 1rem 0;
-}
+/*#feedback-reflecteren section h3 {*/
+/*    margin: 1rem 0;*/
+/*}*/
 
-#feedback-reflecteren h4 {
-    font-weight: 400;
-}
+/*#feedback-reflecteren h4 {*/
+/*    font-weight: 400;*/
+/*}*/
 
-#feedback-reflecteren section p {
-    margin-bottom: 1rem;
-}
+/*#feedback-reflecteren section p {*/
+/*    margin-bottom: 1rem;*/
+/*}*/
 
-@media screen and (max-width: 1250px) {
-    #feedback-reflecteren {
-        width: 90%;
-        margin: 10% auto;
-    }
+/*@media screen and (max-width: 1250px) {*/
+/*    #feedback-reflecteren {*/
+/*        width: 90%;*/
+/*        margin: 10% auto;*/
+/*    }*/
+/*}*/
+#feedback-reflecteren h3{
+    font-weight: 300;
+    width: 100%;
 }
-
 
 /*----------------------- WPL 1 analyse van de arbeidsmarkt --------------------------*/
+#main_arbeidsmarkt{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#vacature-1, #vacature-2, #vacature-3{
+    margin-left: 10rem;
+}
+#vacature-1 h3, #vacature-2 h3, #vacature-3 h3{
+    font-weight: 300;
+}
 #vacature-1 {
     display: flex;
 }
@@ -1412,7 +1451,7 @@ main h2 {
 }
 
 #vacature-2-tekst h3 {
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
 }
 
 #vacature-2-hardskills p {
@@ -1441,15 +1480,16 @@ main h2 {
 }
 
 @media screen and (max-width: 1250px) {
+    #vacature-1, #vacature-2, #vacature-3{
+        margin-left: 0;
+    }
     #vacature-1 img, #vacature-3 img {
         width: 60%;
-        margin-left: 2%;
     }
 
     #vacature-1-tekst p, #vacature-2-tekst p, #vacature-3-tekst p {
-        width: 10rem;
+        width: 7rem;
         height: 5rem;
-        margin: 1%;
         font-size: 12pt;
     }
 
@@ -1540,10 +1580,12 @@ main h2 {
 
 #gastcolleges h3 {
     margin: 1rem 0;
+    font-weight: 300;
 }
 
 #gastcolleges h4 {
     font-weight: 400;
+    font-size: 20pt;
 }
 
 #gastcolleges p {
@@ -1584,15 +1626,18 @@ main h2 {
 
 /*----------------------- WPL 1 eindreflectie --------------------------*/
 #eindreflectie {
-    width: 60rem;
+    width:90%;
+    margin: 3rem auto;
 }
 
 #eindreflectie h3 {
     margin: 1rem 0;
+    font-weight: 300;
 }
 
 #eindreflectie h4 {
     font-weight: 400;
+    font-size: 20pt;
 }
 
 #eindreflectie p {
