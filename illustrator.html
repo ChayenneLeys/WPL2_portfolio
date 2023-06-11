@@ -3,28 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Chayenne Leys | Illustrator</title>
+    <link rel="icon" href="assets/logo_cl.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 </head>
-<body>
-<nav class="nav-not-home">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="photoshop.html">Photoshop</a></li>
-        <li><a href="#">Illustrator</a></li>
-        <li><a href="xd.html">XD</a></li>
-        <li><a href="after-effects.html">After Effects</a></li>
-    </ul>
+<body id="body_ai">
+<nav>
+    <div class="container-lg mx-auto">
+        <div id="nav_large" class="row justify-content-center">
+            <p class="col-2 my-auto py-3"><a href="index.html">Home</a></p>
+            <p class="col-2 my-auto py-3"><a href="#">Photoshop</a></p>
+            <p class="col-2 my-auto py-3"><a href="illustrator.html">Illustrator</a></p>
+            <p class="col-2 my-auto py-3"><a href="xd.html">XD</a></p>
+        </div>
+        <div id="nav_small">
+            <div class="dropdown col-12 text-center">
+                <div id="hamburger_icon" class="col-4">
+                    <div class="row my-1">
+                        <img class="col-5 gx-1" src="assets/bol.png" alt="menu icon">
+                        <img class="col-5 gx-1" src="assets/bol.png" alt="menu icon">
+                    </div>
+                    <div class="row">
+                        <img class="col-5 gx-1" src="assets/bol.png" alt="menu icon">
+                        <img class="col-5 gx-1" src="assets/bol.png" alt="menu icon">
+                    </div>
+                </div>
+                <div id="close_icon" class="col-4 text-start">
+                    <img src="assets/cross.png" alt="menu sluiten">
+                </div>
+                <div class="dropdown-content">
+                    <a href="index.html"><h2>Home</h2></a>
+                    <a href="index.html#over_mij"><h2>Over mij</h2></a>
+                    <a href="index.html#mijn_skills"><h2>Mijn skills</h2></a>
+                    <a href="photoshop.html"><p>Photoshop</p></a>
+                    <a href="illustrator.html"><p>Illustrator</p></a>
+                    <a href="xd.html"><p>XD</p></a>
+                    <a href="index.html#wpl_1"><h2>WPL 1</h2></a>
+                    <a href="index.html#wpl_2"><h2>WPL 2</h2></a>
+                    <a href="#footer"><h2>Contact</h2></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>
 <header>
-    <div class="header-tekst">
-        <h1>Illustra<span>tor</span></h1>
+    <div class="container-xxl">
+        <div id="header_titel" class="row mx-auto">
+            <span id="chayenne" class="col-12 text-center">Illus<span id="leys">trator</span></span>
+        </div>
     </div>
-    <img class="lijnen-links" src="assets/header-lijnen.png" alt="lijnen">
 </header>
 <div class="omhoogknop">
     <a href="#"><i class="fa-solid fa-circle-up"></i></a>
@@ -54,5 +91,31 @@
         <img src="assets/zellan_business-card.png" alt="Logo Zellan Jewels">
     </section>
 </main>
+<footer id="footer">
+    <div class="container-xl footer">
+        <div class="row justify-content-center mx-auto">
+            <div class="col-12 col-md-3 mt-2 footer_contact text-center">
+                <h2>Contacteer mij</h2>
+                <a href="tel:0475892864"><i class="fa-solid fa-phone"></i>  0475/89.28.64</a>
+                <a href="mailto:chayenneleys@gmail.com"><i class="fa-regular fa-envelope"></i>  chayenneleys@gmail.com</a>
+                <a href="https://www.linkedin.com/in/chayenne-leys-0b7880171/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>  Bezoek mijn LinkedIn</a>
+                <a href="assets/Leys_Chayenne_cv.pdf" target="_blank"><i class="fa-regular fa-file"></i>  Bekijk mijn CV</a>
+            </div>
+            <div class="col-12 col-md-3 mt-2 footer_inhoud text-center">
+                <h2>Mijn portfolio</h2>
+                <a href="index.html#over_mij">Over mij</a>
+                <a href="index.html#mijn_skills">Mijn skills</a>
+                <a href="index.html#wpl_1">WPL 1</a>
+                <a href="index.html#wpl_2">WPL 2</a>
+            </div>
+            <div class="col-12 col-md-3 mt-2 footer_skills text-center">
+                <h2>Mijn skills</h2>
+                <a href="photoshop.html">Photoshop</a>
+                <a href="illustrator.html">Illustrator</a>
+                <a href="xd.html">XD</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

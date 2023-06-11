@@ -5,7 +5,7 @@
     font-family: Heebo, sans-serif;
 }
 
-body, nav, header, main, footer {
+body, nav, header, main, footer, .body {
     background-color: #ececec;
 }
 
@@ -159,11 +159,13 @@ main h1 {
 main h2 {
     font-weight: 200;
 }
+
 @media screen and (max-width: 768px) {
-   main h1{
+    main h1 {
         font-size: 30pt;
     }
-    main h2{
+
+    main h2 {
         font-size: 18pt;
     }
 }
@@ -199,6 +201,11 @@ main h2 {
     row-gap: 30px;
     flex-direction: column;
     align-items: center;
+}
+
+.skill_psd a, .skill_ai a, .skill_xd a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .skill_psd .psd_circular-progress {
@@ -286,31 +293,38 @@ main h2 {
     border-radius: 50%;
     padding: 20%;
 }
+
 @media screen and (max-width: 768px) {
-    #mijn-skills-softskills-bollen i{
+    #mijn-skills-softskills-bollen i {
         font-size: 18pt;
         padding: 40%;
     }
-    #mijn-skills-softskills-bollen p{
+
+    #mijn-skills-softskills-bollen p {
         display: none;
     }
-    #mijn-skills-softskills-bollen .col-2:hover p{
+
+    #mijn-skills-softskills-bollen .col-2:hover p {
         display: block;
         position: absolute;
     }
-    #mijn-skills-softskills-bollen{
+
+    #mijn-skills-softskills-bollen {
         margin: 1rem 0 2rem 0;
     }
 }
+
 /*----------------------- WPL 1 --------------------------*/
-#wpl_1{
+#wpl_1 {
     margin-top: 10rem;
 }
-#wpl_1 .schoolprojecten-bollen a{
+
+#wpl_1 .schoolprojecten-bollen a {
     text-decoration: none;
     color: #ececec;
 }
-#wpl_1 .schoolprojecten-item{
+
+#wpl_1 .schoolprojecten-item {
     background-image: url("assets/bol.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -323,61 +337,102 @@ main h2 {
     overflow-x: auto;
     scroll-behavior: smooth;
 }
+
 #wpl_1 .schoolprojecten-item {
     overflow-x: auto;
 }
-.schoolprojecten-bollen::-webkit-scrollbar {
+
+.schoolprojecten-bollen::-webkit-scrollbar,
+.schoolprojecten-item::-webkit-scrollbar {
     display: none;
 }
 
-.arrow-icon i{
+.arrow-icon i {
     color: #2b7f4a;
     font-size: 50pt;
     opacity: 0.5;
 }
-.arrow-icon i:hover{
+
+.arrow-icon i:hover {
     opacity: 1;
 }
+
 /*----------------------- WPL 2 --------------------------*/
-#wpl_2{
+#wpl_2 {
     margin-top: 5rem;
 }
-.schoolprojecten2-bollen a{
+
+.schoolprojecten2-bollen a {
     text-decoration: none;
     color: #ececec;
 }
-.schoolprojecten2-item{
+
+.schoolprojecten2-item {
     background-image: url("assets/bol.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
-
     padding: 5rem 0 5rem 0;
+}
+@media screen and (max-width: 768px){
+    .schoolprojecten2-item {
+        background-size: 50%;
+    }
+}
+@media screen and (max-width: 576px){
+    .schoolprojecten2-item {
+        background-size: 80%;
+    }
 }
 
 /*----------------------- EINDE MAIN --------------------------*/
 /* Omhoogknop */
-.omhoogknop{
+.omhoogknop {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     z-index: 1000;
 }
-.omhoogknop a i{
+
+.omhoogknop a i {
     font-size: 40pt;
     color: #2b7f4a;
 }
+
 @media screen and (max-width: 768px) {
-    .omhoogknop a i{
+    .omhoogknop a i {
         font-size: 18pt;
     }
 }
+
 /*----------------------- FOOTER --------------------------*/
 .footer {
     margin-top: 10rem;
     background-color: #2b7f4a;
     border-radius: 5rem 5rem 0 0;
-    height: 10rem;
+    padding-bottom: 5rem;
+}
+
+.footer h2 {
+    color: #ececec;
+    text-decoration: none;
+    font-weight: 200;
+    margin: 2rem 0;
+}
+
+.footer a {
+    color: #ececec;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.footer a:hover {
+    font-weight: 600;
+}
+
+.footer a i {
+    margin-right: 0.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -387,3 +442,1225 @@ main h2 {
 }
 
 /*----------------------- EINDE FOOTER --------------------------*/
+
+/*----------------------- SKILLS psd --------------------------*/
+#body_psd {
+    background-color: #ececec;
+    overflow-x: hidden;
+}
+
+#main-photoshop {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#photoshop-chiro-emblemen {
+    display: flex;
+}
+
+#chirorok {
+    width: 40rem;
+    height: fit-content;
+    z-index: 2
+}
+
+#chirorok-zak {
+    width: 30rem;
+    height: fit-content;
+    margin-left: -25rem;
+    z-index: 1
+}
+
+#aandenken-2020 {
+    width: 18rem;
+    height: fit-content;
+    margin: 2rem 0 0 22rem;
+    z-index: 1;
+}
+
+#aandenken-zee {
+    width: 16rem;
+    height: fit-content;
+    margin: 15rem 0 0 -32rem;
+    z-index: 2;
+}
+
+#aandenken-2022 {
+    width: 18rem;
+    height: fit-content;
+    margin: 24rem 0 0 -2rem;
+    z-index: 1;
+}
+
+#photoshop-chiro-emblemen-tekst {
+    color: #2b7f4a;
+    margin: 33rem 0 0 -42rem;
+    font-size: 21pt;
+    text-align: center;
+}
+
+#photoshop-chiro-extra {
+    display: flex;
+}
+
+#photoshop-chiro-extra-geld {
+    display: flex;
+}
+
+#photoshop-chiro-extra-geld img {
+    width: 39rem;
+    height: fit-content;
+}
+
+#photoshop-chiro-extra-geld-tekst {
+    color: #2b7f4a;
+    margin: 37rem 0 0 0;
+    font-size: 21pt;
+    text-align: left;
+}
+
+#photoshop-chiro-extra-posters {
+    display: flex;
+    margin: 0 0 0 -15rem;
+}
+
+#photoshop-chiro-extra-posters img {
+    width: 28rem;
+    height: fit-content;
+}
+
+#photoshop-chiro-extra-posters-tekst {
+    color: #2b7f4a;
+    margin: 33rem 0 0 -30rem;
+    font-size: 21pt;
+    text-align: right;
+}
+
+#photoshop-stage {
+    display: flex;
+}
+
+#photoshop-stage-tekst {
+    color: #2b7f4a;
+    margin: 3rem 0 0 6rem;
+    font-size: 21pt;
+    text-align: left;
+}
+
+#stage-tarzan {
+    width: 25rem;
+    height: fit-content;
+    margin: 15rem 0 0 -11rem;
+}
+
+#stage-mary-poppins-1 {
+    width: 28rem;
+    height: fit-content;
+    margin: 5rem 0 0 2rem;
+}
+
+#photoshop-stage-marypoppins {
+    display: flex;
+    margin: 34rem 0 0 -28.2rem;
+}
+
+#photoshop-stage-marypoppins img {
+    width: 6.5rem;
+    height: fit-content;
+    margin: 0.3rem;
+}
+
+#stage-story-1 {
+    width: 12rem;
+    height: fit-content;
+    margin: 5rem 0 0 10rem;
+}
+
+#stage-story-2 {
+    width: 12rem;
+    height: fit-content;
+    margin: 19.5rem 0 0 -20rem;
+}
+
+#photoshop-mitro {
+    display: flex;
+}
+
+#photoshop-mitro img {
+    width: 50rem;
+    height: fit-content;
+    margin: 5rem 0 0 5rem;
+}
+
+#photoshop-mitro-tekst {
+    color: #2b7f4a;
+    margin: 20rem 0 0 10rem;
+    font-size: 21pt;
+    text-align: right;
+}
+
+#photoshop-zellan {
+    margin-top: 5rem;
+}
+
+#photoshop-zellan-afbeeldingen {
+    display: flex;
+    justify-content: space-between;
+}
+
+#zellan-insta-post {
+    height: 30rem;
+    width: fit-content;
+    margin: 0 -7rem 0 7rem;
+}
+
+#zellan-insta-story {
+    height: 30rem;
+    width: fit-content;
+    margin: 0 -1rem 0 1rem;
+}
+
+#zellan-card {
+    width: 50%;
+    height: fit-content;
+}
+
+#photoshop-zellan-tekst {
+    color: #2b7f4a;
+    margin: -10rem 0 0 5rem;
+    font-size: 21pt;
+    text-align: left;
+}
+
+@media screen and (max-width: 1250px) {
+    #main-photoshop {
+        margin-top: 0;
+    }
+    #photoshop-chiro-emblemen-tekst p,
+    #photoshop-chiro-extra-geld-tekst p,
+    #photoshop-chiro-extra-posters-tekst p,
+    #photoshop-stage-tekst p,
+    #photoshop-mitro-tekst p,
+    #photoshop-zellan-tekst p {
+        font-size: 12pt;
+        margin: 0.5rem 0;
+    }
+
+    #chirorok {
+        width: 40%;
+    }
+
+    #chirorok-zak {
+        width: 30%;
+        margin-left: -25%;
+    }
+
+    #aandenken-2020 {
+        width: 20%;
+        margin: 2% 0 0 25%;
+    }
+
+    #aandenken-zee {
+        width: 20%;
+        margin: 15% 0 0 -37%;
+    }
+
+    #aandenken-2022 {
+        width: 20%;
+        margin: 23% 0 0 -1%;
+    }
+
+    #photoshop-chiro-emblemen-tekst {
+        font-size: 16pt;
+        margin: 33% 0 0 -55%;
+    }
+
+    #photoshop-chiro-extra-geld img {
+        width: 80%;
+    }
+
+    #photoshop-chiro-extra-posters img {
+        width: 50%;
+    }
+
+    #photoshop-chiro-extra-posters {
+        margin: 0;
+    }
+
+    #photoshop-chiro-extra-geld-tekst {
+        font-size: 16pt;
+        margin: 80% 0 0 0;
+    }
+
+    #photoshop-chiro-extra-posters-tekst {
+        font-size: 16pt;
+        margin: 55% 0 0 -60%;
+    }
+
+    #photoshop-stage-tekst {
+        font-size: 16pt;
+        margin: 0 0 0 8%;
+    }
+
+    #stage-tarzan {
+        width: 30%;
+        margin: 20.5% 0 0 -25%;
+    }
+
+    #stage-mary-poppins-1 {
+        width: 40%;
+        margin: 10% 0 0 1%;
+    }
+
+    #photoshop-stage-marypoppins {
+        display: none;
+    }
+
+    #stage-story-1 {
+        width: 15%;
+        margin: 10% 0 0 10%;
+    }
+
+    #stage-story-2 {
+        width: 15%;
+        margin: 23% 0 0 -24%;
+    }
+
+    #photoshop-mitro img {
+        width: 70%;
+        margin: 10% 0 0 5%;
+    }
+
+    #photoshop-mitro-tekst {
+        font-size: 16pt;
+        margin: 35% 0 0 0;
+    }
+
+    #zellan-insta-post {
+        width: 15%;
+        height: fit-content;
+        margin: 0 0 0 10%;
+    }
+
+    #zellan-insta-story {
+        width: 16.85%;
+        height: fit-content;
+        margin: 0;
+    }
+
+    #photoshop-zellan-tekst {
+        font-size: 16pt;
+        margin: -12% 0 0 10%;
+    }
+}
+
+
+/*----------------------- SKILLS ai --------------------------*/
+#body_ai {
+    background-color: #ececec;
+}
+
+#main-illustrator {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+#illustrator-aandenken2021 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#illustrator-aandenken-chirorok {
+    width: 45rem;
+    height: fit-content;
+}
+
+#illustrator-aandenken {
+    width: 30rem;
+    height: fit-content;
+    margin: 10rem 10rem 0 -10rem;
+}
+
+#illustrator-aandenken2021-tekst {
+    color: #2b7f4a;
+    margin: 5rem 0 0 -10rem;
+    font-size: 21pt;
+    text-align: center;
+}
+
+#illustrator-denemarken {
+    display: flex;
+}
+
+#illustrator-denemarken-tekst {
+    color: #2b7f4a;
+    margin: 5rem 0 0 5rem;
+    font-size: 21pt;
+    text-align: left;
+}
+
+#illustrator-lijntekening-frame {
+    width: 30rem;
+    height: fit-content;
+    margin: 10rem 0 0 0;
+}
+
+#illustrator-lijntekening-shirt {
+    width: 32rem;
+    height: fit-content;
+}
+
+#illustrator-zellan {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10rem;
+}
+
+#illustrator-zellan-tekst {
+    color: #2b7f4a;
+    margin: 30rem 0 0 10rem;
+    font-size: 21pt;
+    text-align: left;
+}
+
+#illustrator-zellan img {
+    width: 45rem;
+    height: fit-content;
+    margin: 5rem 0 0 0;
+}
+
+@media screen and (max-width: 1250px) {
+    #main-illustrator {
+        margin-top: 0;
+    }
+
+    #illustrator-aandenken-chirorok {
+        width: 40%;
+    }
+
+    #illustrator-aandenken {
+        width: 30%;
+        margin: 5% 10% 0 0;
+    }
+
+    #illustrator-aandenken2021-tekst {
+        font-size: 12pt;
+        margin: 0;
+    }
+
+    #illustrator-lijntekening-frame {
+        width: 30%;
+        margin: 20% 0 0 -10%;
+    }
+
+    #illustrator-lijntekening-shirt {
+        width: 40%;
+    }
+
+    #illustrator-denemarken-tekst {
+        font-size: 12pt;
+        margin: 5% 0 0 10%;
+    }
+
+    #illustrator-zellan-tekst {
+        font-size: 12pt;
+        margin: 10% 0 0 5%;
+    }
+
+    #illustrator-zellan img {
+        width: 60%;
+        margin: 0;
+    }
+}
+
+/*----------------------- SKILLS xd --------------------------*/
+#body_xd {
+    background-color: #ececec;
+}
+
+#wireframe-portfolio {
+    text-align: center;
+    display: flex;
+}
+
+#wireframe-portfolio img {
+    width: 60rem;
+    margin: 5rem auto 0 auto;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1250px) {
+    #wireframe-portfolio img {
+        width: 80%;
+    }
+}
+
+
+
+/*----------------------- WPL 1  --------------------------*/
+.terug {
+    color: #ececec;
+    text-decoration: none;
+    font-size: 15pt;
+    background-color: #2b7f4a;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+/*----------------------- WPL 1 kernwaarden en motivatie --------------------------*/
+#section-kernwaarden {
+    width: 70rem;
+    margin: 12rem auto;
+}
+
+#kernwaarden-bollen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#kernwaarden-bollen p {
+    display: block;
+    width: 15rem;
+    text-align: center;
+    font-size: 25pt;
+    padding: 7rem 0;
+    color: #ececec;
+    background-image: url("assets/bol.png");
+    background-size: 15rem 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section-kernkwadranten table {
+    margin-bottom: 5rem;
+}
+
+#section-kernkwadranten table tr td {
+    font-size: 18pt;
+    padding: 0.5rem;
+}
+
+#section-kernkwadranten table tr td i {
+    color: #2b7f4a;
+    font-size: 24pt;
+}
+
+#section-kernkwadranten .kernkwadranten-bruin {
+    background-color: #2b7f4a;
+    color: #ececec;
+    font-size: 20pt;
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem;
+    width: 20rem;
+}
+
+#kernkwadranten-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1250px) {
+    #section-kernwaarden {
+        width: 90%;
+        margin: 10% 5% 0 5%;
+    }
+
+    #kernwaarden-bollen p {
+        font-size: 16pt;
+        width: 10rem;
+        background-size: 10rem 10rem;
+    }
+
+    #section-kernkwadranten {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #section-kernkwadranten table tr td {
+        font-size: 12pt;
+    }
+
+    #section-kernkwadranten table tr td i {
+        font-size: 16pt;
+    }
+
+    #section-kernkwadranten .kernkwadranten-bruin {
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #kernwaarden-bollen p {
+        font-size: 12pt;
+        width: 6rem;
+        background-size: 6rem 6rem;
+    }
+
+    #section-kernkwadranten table tr td {
+        font-size: 12pt;
+    }
+}
+@media screen and (max-width: 500px){
+    #kernwaarden-bollen p{
+        font-size: 11pt;
+        width: 6rem;
+        background-size: 6rem 6rem;
+    }
+    #section-kernkwadranten table tr td{
+        font-size: 10pt;
+    }
+    #kernkwadranten-links{
+        justify-content: flex-start;
+    }
+    #section-kernkwadranten .kernkwadranten-bruin{
+        font-size: 11pt;
+    }
+}
+/*----------------------- WPL 1 personal branding --------------------------*/
+#mijn-look {
+    width: 50rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#mijn-look h3{
+    font-weight: 300;
+    width: 100%;
+}
+#mijn-look section {
+    width: 24.5rem;
+    margin: auto;
+}
+
+#mijn-look img {
+    width: 95%;
+}
+
+#hoe-zien-anderen-mij {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-top: 7rem;
+}
+
+#hoe-zien-anderen-mij p {
+    background-color: #2b7f4a;
+    color: #ececec;
+    border-radius: 1rem;
+    font-size: 18pt;
+    width: 11rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0.2rem;
+}
+
+#mijn-look-aspecten {
+    width: 50rem;
+    display: contents;
+}
+
+#mijn-look-aspecten p {
+    background-color: #2b7f4a;
+    color: #ececec;
+    border-radius: 1rem;
+    font-size: 18pt;
+    width: 14rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0.2rem;
+}
+
+#mijn-stijl {
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+#mijn-stijl-voorbeeld-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 10rem 0;
+}
+
+#mijn-stijl-voorbeeld-1_1 {
+    width: 40rem;
+    height: fit-content;
+    z-index: 2;
+}
+
+#mijn-stijl-voorbeeld-1_2 {
+    width: 40rem;
+    height: fit-content;
+    z-index: 1;
+    margin: -20rem 0 0 30rem;
+}
+
+#mijn-stijl-voorbeeld-1-tekst p {
+    background-color: #2b7f4a;
+    color: #ececec;
+    border-radius: 1rem;
+    font-size: 18pt;
+    width: 13rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0.2rem;
+}
+
+#mijn-stijl-voorbeeld-1-tekst {
+    margin: -52rem 0 0 45rem;
+}
+
+#mijn-stijl-voorbeeld-2 {
+    width: 80rem;
+    margin: 12rem -5rem 0 -5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mijn-stijl-voorbeeld-2 p {
+    background-color: #2b7f4a;
+    color: #ececec;
+    border-radius: 1rem;
+    font-size: 18pt;
+    width: 13rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0.2rem;
+}
+
+#mijn-stijl-voorbeeld-2-tekst-1 {
+    display: flex;
+    margin: 0 0 0 12rem;
+}
+
+#mijn-stijl-voorbeeld-2-tekst-1 p:nth-child(2) {
+    font-size: 16pt;
+}
+
+#mijn-stijl-voorbeeld-2-afbeelding {
+    margin-top: 1rem;
+    display: flex;
+}
+
+#mijn-stijl-voorbeeld-2-afbeelding img {
+    width: 30rem;
+    height: fit-content;
+}
+
+#voorbeeld-2_1 {
+    margin-top: 5rem;
+    z-index: 2;
+}
+
+#voorbeeld-2_2 {
+    margin-left: -3rem;
+    z-index: 1;
+}
+
+#voorbeeld-2_3 {
+    margin: -8rem 0 0 -3rem;
+    z-index: 3;
+}
+
+#voorbeeld-2_4 {
+    margin: 20rem 0 0 -30rem;
+    z-index: 4;
+}
+
+#mijn-stijl-voorbeeld-2-tekst-2 {
+    display: flex;
+    margin: -8rem 0 0 20rem;
+}
+
+@media screen and (max-width: 1250px) {
+    #mijn-stijl {
+        width: 90%;
+        margin: 10% auto 0 auto;
+    }
+
+    #mijn-stijl-voorbeeld-1_1 {
+        width: 60%;
+        margin: 0;
+    }
+
+    #mijn-stijl-voorbeeld-1_2 {
+        width: 50%;
+        margin: -25% 0 0 55%;
+    }
+
+    #mijn-stijl-voorbeeld-1-tekst {
+        margin: -70% 0 0 65%;
+    }
+
+    #mijn-stijl-voorbeeld-1-tekst p {
+        font-size: 16pt;
+        height: 15%;
+    }
+
+    #mijn-stijl-voorbeeld-2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-1 p, #mijn-stijl-voorbeeld-2-tekst-1 p:nth-child(2) {
+        font-size: 14pt;
+        width: 30%;
+        height: 100%
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-1 {
+        width: 70%;
+        margin: 0;
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-2 p {
+        font-size: 14pt;
+        width: 50%;
+        height: 100%;
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-2 {
+        margin: -15% 0 0 15%;
+    }
+
+    #mijn-stijl-voorbeeld-2-afbeelding img {
+        width: 40%;
+    }
+
+    #voorbeeld-2_1 {
+        margin: 10% 0 0 -5%;
+    }
+
+    #voorbeeld-2_2 {
+        margin: 1% 0 0 -4%;
+    }
+
+    #voorbeeld-2_3 {
+        margin: -10% 0 0 -4%;
+    }
+
+    #voorbeeld-2_4 {
+        margin: 30% 0 0 -40%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #mijn-look {
+        width: 90%;
+        margin: 10% auto;
+    }
+
+    #mijn-look section {
+        width: 50%;
+    }
+
+    #hoe-zien-anderen-mij p {
+        font-size: 14pt;
+        width: 8rem;
+        height: 6rem;
+    }
+
+    #mijn-look-aspecten p {
+        font-size: 14pt;
+        width: 8rem;
+        height: 6rem;
+    }
+
+    #hoe-zien-anderen-mij {
+        margin-top: 0;
+    }
+
+    #hoe-zien-anderen-mij p {
+        font-size: 12pt;
+        width: 90%;
+        height: 0;
+        padding: 2rem;
+    }
+
+    .verdwijnt {
+        display: none;
+    }
+
+    #mijn-stijl-voorbeeld-1-tekst {
+        margin: -80% 0 0 62%;
+    }
+
+    #mijn-stijl-voorbeeld-1-tekst p {
+        font-size: 12pt;
+        height: 15%;
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-1 {
+        margin: 0 0 0 -5%;
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-1 p, #mijn-stijl-voorbeeld-2-tekst-1 p:nth-child(2), #mijn-stijl-voorbeeld-2-tekst-2 p {
+        font-size: 10pt;
+    }
+
+    #mijn-stijl-voorbeeld-2-tekst-2 {
+        margin: -15% 0 0 5%;
+    }
+}
+@media screen and (max-width: 500px){
+    #hoe-zien-anderen-mij{
+        margin-top: 0;
+    }
+    #hoe-zien-anderen-mij p{
+        font-size: 11pt;
+        width: 90%;
+        height: 0;
+        padding: 1rem;
+    }
+    .verdwijnt{
+        display: none;
+    }
+    #mijn-stijl-voorbeeld-1_2{
+        margin: -15% 0 0 50%;
+    }
+    #mijn-stijl-voorbeeld-1{
+        margin-bottom: 1%;
+    }
+    #mijn-stijl-voorbeeld-1-tekst p{
+        font-size: 11pt;
+        width: 150%;
+    }
+    #mijn-stijl-voorbeeld-2-tekst-2{
+        margin: 0;
+    }
+}
+/*----------------------- WPL 1 feedback en reflecteren --------------------------*/
+/*#feedback-reflecteren {*/
+/*    width: 60rem;*/
+/*}*/
+
+/*#feedback-reflecteren section h3 {*/
+/*    margin: 1rem 0;*/
+/*}*/
+
+/*#feedback-reflecteren h4 {*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*#feedback-reflecteren section p {*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*@media screen and (max-width: 1250px) {*/
+/*    #feedback-reflecteren {*/
+/*        width: 90%;*/
+/*        margin: 10% auto;*/
+/*    }*/
+/*}*/
+#feedback-reflecteren h3{
+    font-weight: 300;
+    width: 100%;
+}
+
+/*----------------------- WPL 1 analyse van de arbeidsmarkt --------------------------*/
+#main_arbeidsmarkt{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+#vacature-1, #vacature-2, #vacature-3{
+    margin-left: 10rem;
+}
+#vacature-1 h3, #vacature-2 h3, #vacature-3 h3{
+    font-weight: 300;
+}
+#vacature-1 {
+    display: flex;
+}
+
+#vacature-1 img {
+    width: 45rem;
+    height: fit-content;
+    margin-top: 5rem;
+}
+
+#vacature-1-tekst {
+    margin: 20rem 0 0 -10rem;
+}
+
+#vacature-1-tekst h3 {
+    margin: -15rem 0 0 12rem;
+}
+
+#vacature-1-tekst p, #vacature-2-tekst p, #vacature-3-tekst p {
+    background-color: #2b7f4a;
+    color: #ececec;
+    border-radius: 1rem;
+    font-size: 14pt;
+    width: 12rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0.2rem;
+}
+
+.vacature-tekst-vakken {
+    margin-top: 1rem;
+}
+
+.vacature-tekst-vakken-top {
+    display: flex;
+    justify-content: center;
+}
+
+.vacature-tekst-vakken-middle {
+    display: flex;
+    justify-content: center;
+}
+
+.vacature-tekst-vakken-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+#vacature-2 {
+    display: flex;
+    margin-top: 5rem;
+}
+
+#vacature-2 img {
+    width: 40rem;
+    height: fit-content;
+}
+
+#vacature-2-tekst {
+    margin: 15rem 2rem 0 -2rem;
+}
+
+#vacature-2-tekst h3 {
+    margin-bottom: 1rem;
+}
+
+#vacature-2-hardskills p {
+    font-size: 7pt;
+}
+
+#vacature-3 {
+    margin-top: 5rem;
+    display: flex;
+}
+
+#vacature-3 img {
+    width: 45rem;
+}
+
+#vacature-3-tekst {
+    margin: 22rem 0 0 -15rem;
+}
+
+#vacature-3-tekst h3 {
+    margin-left: 20rem;
+}
+
+#vacature-3-hardskills p {
+    font-size: 11pt;
+}
+
+@media screen and (max-width: 1250px) {
+    #vacature-1, #vacature-2, #vacature-3{
+        margin-left: 0;
+    }
+    #vacature-1 img, #vacature-3 img {
+        width: 60%;
+    }
+
+    #vacature-1-tekst p, #vacature-2-tekst p, #vacature-3-tekst p {
+        width: 7rem;
+        height: 5rem;
+        font-size: 12pt;
+    }
+
+    #vacature-1-tekst {
+        margin-top: 40%;
+    }
+
+    #vacature-2-tekst {
+        margin: 0 0 0 1%;
+    }
+
+    #vacature-2-tekst h3 {
+        margin: 10% 0 0 10%;
+    }
+
+    #vacature-2-hardskills p {
+        font-size: 5pt;
+    }
+
+    #vacature-2 img {
+        width: 40%;
+    }
+
+    #vacature-3 {
+        margin: 0 0 5% 5%;
+    }
+
+    #vacature-3-tekst h3 {
+        margin: 0 0 0 60%;
+    }
+
+    #vacature-3-hardskills p {
+        font-size: 8pt;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #vacature-1-tekst p, #vacature-2-tekst p, #vacature-3-tekst p {
+        width: 8rem;
+        height: 4rem;
+        font-size: 6pt;
+    }
+
+    #vacature-1-tekst {
+        margin: 50% 0 0 -15%;
+    }
+
+    #vacature-1-tekst h3 {
+        margin-left: 25%;
+    }
+
+    #vacature-2-hardskills p {
+        font-size: 3pt;
+    }
+
+    #vacature-3 {
+        margin-top: 2%;
+    }
+
+    #vacature-3-tekst h3 {
+        margin: 50% 0 0 40%;
+    }
+
+    #vacature-3-tekst {
+        margin: 0 0 0 -20%;
+    }
+}
+@media screen and (max-width: 500px){
+    #vacature-1-tekst p{
+        font-size: 8pt;
+    }
+    #vacature-1-tekst p, #vacature-2-tekst p, #vacature-3-tekst p{
+        border-radius: 0.5rem;
+        width: 5rem;
+        height: 3rem;
+    }
+    #vacature-1-tekst{
+        margin: 70% 0 0 -15%;
+    }
+    #vacature-1-tekst h3{
+        margin-left: 40%;
+    }
+}
+/*----------------------- WPL 1 reflectie van gastcolleges --------------------------*/
+#gastcolleges {
+    width: 60rem;
+}
+
+#gastcolleges h3 {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+#gastcolleges h4 {
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+#gastcolleges p {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1250px) {
+    #gastcolleges {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
+
+
+/*----------------------- WPL 1 concept poster --------------------------*/
+#concept-poster {
+    text-align: center;
+}
+
+#concept-poster img {
+    width: 70rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1250px) {
+    #concept-poster img {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #eindreflectie {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
+
+
+/*----------------------- WPL 1 eindreflectie --------------------------*/
+#eindreflectie {
+    width:90%;
+    margin: 3rem auto;
+}
+
+#eindreflectie h3 {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+#eindreflectie h4 {
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+#eindreflectie p {
+    margin-bottom: 1rem;
+}
+
+/*----------------------- WPL 2 eindreflectie --------------------------*/
+#eindevaluatie {
+    width:90%;
+    margin: 3rem auto;
+}
+
+#eindevaluatie h3 {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+#eindevaluatie h4 {
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+#eindevaluatie p {
+    margin-bottom: 1rem;
+}
