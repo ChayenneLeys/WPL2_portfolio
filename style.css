@@ -342,7 +342,8 @@ main h2 {
     overflow-x: auto;
 }
 
-.schoolprojecten-bollen::-webkit-scrollbar {
+.schoolprojecten-bollen::-webkit-scrollbar,
+.schoolprojecten-item::-webkit-scrollbar {
     display: none;
 }
 
@@ -1645,4 +1646,21 @@ main h2 {
 }
 
 /*----------------------- WPL 2 eindreflectie --------------------------*/
+#eindevaluatie {
+    width:90%;
+    margin: 3rem auto;
+}
 
+#eindevaluatie h3 {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+#eindevaluatie h4 {
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+#eindevaluatie p {
+    margin-bottom: 1rem;
+}
